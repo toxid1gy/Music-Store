@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Música</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1 id="inicio">Tienda de Música</h1>
+    
+    <nav>
+        <a href="#discos">Discos</a>
+        <a href="#stickers">Stickers</a>
+        <a href="#libros">Libros</a>
+        <button id="btnVerCarrito">Ver Carrito (<span id="contadorCarrito">0</span>)</button>
+    </nav>
+
+    <button id="btnVolverArriba" title="Volver arriba">↑</button>
+
+    <hr>
+
+    <section id="discos">
+        <h2>Discos de Vinilo</h2>
+        <div class="items-container">
+            <div class="item">
+                <img src="imagenes/discos/disco1.jpg" alt="Disco 1">
+                <p>Disco 1 - $5000</p>
+                <button onclick="agregar('Disco 1',5000)">Agregar CD</button>
+                <button onclick="agregar('Disco 1 Vinilo',15000)">Vinilo +10000</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/discos/disco2.jfif" alt="Disco 2">
+                <p>Disco 2 - $6000</p>
+                <button onclick="agregar('Disco 2',6000)">Agregar CD</button>
+                <button onclick="agregar('Disco 2 Vinilo',16000)">Vinilo +10000</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/discos/disco3.jfif" alt="Disco 3">
+                <p>Disco 3 - $7000</p>
+                <button onclick="agregar('Disco 3',7000)">Agregar CD</button>
+                <button onclick="agregar('Disco 3 Vinilo',17000)">Vinilo +10000</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/discos/disco4.jfif" alt="Disco 4">
+                <p>Disco 4 - $8000</p>
+                <button onclick="agregar('Disco 4',8000)">Agregar CD</button>
+                <button onclick="agregar('Disco 4 Vinilo',18000)">Vinilo +10000</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/discos/disco5.jpg" alt="Disco 5">
+                <p>Disco 5 - $9000</p>
+                <button onclick="agregar('Disco 5',9000)">Agregar CD</button>
+                <button onclick="agregar('Disco 5 Vinilo',19000)">Vinilo +10000</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="stickers">
+        <h2>Stickers Musicales</h2>
+        <div class="items-container">
+            <div class="item">
+                <img src="imagenes/stickers/sticker1.png" alt="Sticker boludo">
+                <p>Sticker boludo - $1000</p>
+                <button onclick="agregarSticker('Sticker boludo')">Agregar</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/stickers/sticker2.webp" alt="Sticker yuta">
+                <p>Sticker yuta - $1000</p>
+                <button onclick="agregarSticker('Sticker yuta')">Agregar</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/stickers/sticker3.jpg" alt="Sticker gato">
+                <p>Sticker gato - $1000</p>
+                <button onclick="agregarSticker('Sticker gato')">Agregar</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/stickers/sticker4.jpg" alt="Sticker barassi">
+                <p>Sticker barassi - $1000</p>
+                <button onclick="agregarSticker('Sticker barassi')">Agregar</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/stickers/sticker5.jpg" alt="Sticker pepe">
+                <p>Sticker pepe - $1000</p>
+                <button onclick="agregarSticker('Sticker pepe')">Agregar</button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="libros">
+        <h2>Libros de Música</h2>
+        <div class="items-container">
+            <div class="item">
+                <img src="imagenes/libros/libro1.webp" alt="Libro 1">
+                <p>Libro 1</p>
+                <button onclick="agregar('Libro 1 Tapa dura',4000)">Tapa dura</button>
+                <button onclick="agregar('Libro 1 Tapa blanda',3000)">Tapa blanda</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/libros/libro2.webp" alt="Libro 2">
+                <p>Libro 2</p>
+                <button onclick="agregar('Libro 2 Tapa dura',5000)">Tapa dura</button>
+                <button onclick="agregar('Libro 2 Tapa blanda',4000)">Tapa blanda</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/libros/libro3.jpg" alt="Libro 3">
+                <p>Libro 3</p>
+                <button onclick="agregar('Libro 3 Tapa dura',6000)">Tapa dura</button>
+                <button onclick="agregar('Libro 3 Tapa blanda',5000)">Tapa blanda</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/libros/libro4.jfif" alt="Libro 4">
+                <p>Libro 4</p>
+                <button onclick="agregar('Libro 4 Tapa dura',7000)">Tapa dura</button>
+                <button onclick="agregar('Libro 4 Tapa blanda',6000)">Tapa blanda</button>
+            </div>
+
+            <div class="item">
+                <img src="imagenes/libros/libro5.jfif" alt="Libro 5">
+                <p>Libro 5</p>
+                <button onclick="agregar('Libro 5 Tapa dura',8000)">Tapa dura</button>
+                <button onclick="agregar('Libro 5 Tapa blanda',7000)">Tapa blanda</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="modalCarrito" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Mi Carrito de Compras</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <ul id="lista"></ul>
+                <div id="resumenCompra"></div>
+                <p id="total"></p>
+                <div class="opciones-pago">
+                    <label>
+                        <input type="checkbox" id="efectivo">
+                        Pago en efectivo (10% de descuento)
+                    </label>
+                </div>
+                <div class="modal-buttons">
+                    <button onclick="vaciarCarrito()" class="btn-vaciar">Vaciar Carrito</button>
+                    <button onclick="finalizarCompra()" class="btn-comprar">Finalizar Compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let carrito = [];
+        let stickers = new Set();
+
+        const modal = document.getElementById("modalCarrito");
+        const btnVerCarrito = document.getElementById("btnVerCarrito");
+        const closeBtn = document.querySelector(".close");
+
+        btnVerCarrito.onclick = function() {
+            mostrarCarrito();
+            modal.style.display = "block";
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function agregar(nombre, precio) {
+            carrito.push({
+                nombre: nombre,
+                precio: precio
+            });
+            actualizarContador();
+            mostrarNotificacion(nombre + " agregado al carrito");
+        }
+
+        function agregarSticker(nombre) {
+            if (!stickers.has(nombre)) {
+                stickers.add(nombre);
+                actualizarContador();
+                mostrarNotificacion(nombre + " agregado al carrito");
+            } else {
+                mostrarNotificacion(nombre + " ya esta en tu carrito");
+            }
+        }
+
+        function actualizarContador() {
+            const totalItems = carrito.length + stickers.size;
+            document.getElementById("contadorCarrito").textContent = totalItems;
+        }
+
+        function vaciarCarrito() {
+            if(confirm('¿Esta seguro de que quiere vaciar el carrito?')) {
+                carrito = [];
+                stickers.clear();
+                actualizarContador();
+                mostrarCarrito();
+                mostrarNotificacion('Carrito vaciado');
+            }
+        }
+
+        function finalizarCompra() {
+            if(carrito.length === 0 && stickers.size === 0) {
+                mostrarNotificacion('No hay productos en el carrito');
+                return;
+            }
+            
+            let totalFinal = calcularTotal();
+            mostrarNotificacion('Compra finalizada! Total: $' + totalFinal.toFixed(2));
+            carrito = [];
+            stickers.clear();
+            actualizarContador();
+            mostrarCarrito();
+            modal.style.display = "none";
+        }
+
+        function calcularTotal() {
+            let total = 0;
+            carrito.forEach(function(item) { total += item.precio; });
+            stickers.forEach(function() { total += 1000; });
+            
+            if (total > 10000) {
+                total = total * 0.95;
+            }
+            
+            if (document.getElementById("efectivo").checked) {
+                total = total * 0.90;
+            }
+            
+            return total;
+        }
+
+        function mostrarCarrito() {
+            let lista = document.getElementById("lista");
+            let totalTexto = document.getElementById("total");
+            let resumenDiv = document.getElementById("resumenCompra");
+            
+            lista.innerHTML = "";
+            let subtotal = 0;
+
+            if (carrito.length === 0 && stickers.size === 0) {
+                lista.innerHTML = '<li style="text-align: center; color: #999;">Tu carrito esta vacio</li>';
+                totalTexto.innerHTML = "";
+                resumenDiv.innerHTML = "";
+                return;
+            }
+
+            carrito.forEach(function(item, index) {
+                let li = document.createElement("li");
+                li.innerHTML = '<span>' + item.nombre + ' - $' + item.precio.toLocaleString() + '</span><button class="btn-eliminar" onclick="eliminarItem(' + index + ')">Eliminar</button>';
+                lista.appendChild(li);
+                subtotal += item.precio;
+            });
+
+            let stickerArray = Array.from(stickers);
+            stickerArray.forEach(function(item, index) {
+                let li = document.createElement("li");
+                li.innerHTML = '<span>' + item + ' - $1,000</span><button class="btn-eliminar" onclick="eliminarSticker(' + index + ')">Eliminar</button>';
+                lista.appendChild(li);
+                subtotal += 1000;
+            });
+
+            let descuentoMayor = 0;
+            let descuentoEfectivo = 0;
+            let total = subtotal;
+            
+            if (subtotal > 10000) {
+                descuentoMayor = subtotal * 0.05;
+                total = subtotal * 0.95;
+            }
+            
+            const esEfectivo = document.getElementById("efectivo").checked;
+            if (esEfectivo) {
+                descuentoEfectivo = total * 0.10;
+                total = total * 0.90;
+            }
+
+            let resumenHTML = "";
+            if (subtotal > 10000) {
+                resumenHTML += '<div class="descuento">Descuento 5% por compra mayor a $10,000: -$' + descuentoMayor.toFixed(2) + '</div>';
+            }
+            if (esEfectivo) {
+                resumenHTML += '<div class="descuento">Descuento 10% por pago en efectivo: -$' + descuentoEfectivo.toFixed(2) + '</div>';
+            }
+            
+            resumenDiv.innerHTML = resumenHTML;
+            totalTexto.innerHTML = '<strong>Total final: $' + total.toFixed(2) + '</strong>';
+        }
+
+        function eliminarItem(index) {
+            let itemEliminado = carrito[index];
+            carrito.splice(index, 1);
+            actualizarContador();
+            mostrarCarrito();
+            mostrarNotificacion(itemEliminado.nombre + " eliminado");
+        }
+
+        function eliminarSticker(index) {
+            let stickerArray = Array.from(stickers);
+            let stickerEliminado = stickerArray[index];
+            stickers.delete(stickerEliminado);
+            actualizarContador();
+            mostrarCarrito();
+            mostrarNotificacion(stickerEliminado + " eliminado");
+        }
+
+        function mostrarNotificacion(mensaje) {
+            let notificacion = document.createElement("div");
+            notificacion.textContent = mensaje;
+            notificacion.className = "notificacion";
+            document.body.appendChild(notificacion);
+            
+            setTimeout(function() {
+                notificacion.classList.add("show");
+                setTimeout(function() {
+                    notificacion.classList.remove("show");
+                    setTimeout(function() { 
+                        notificacion.remove(); 
+                    }, 300);
+                }, 2000);
+            }, 100);
+        }
+
+        const btnVolver = document.getElementById("btnVolverArriba");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnVolver.style.display = "flex";
+            } else {
+                btnVolver.style.display = "none";
+            }
+        };
+        
+        btnVolver.onclick = function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>
